@@ -10,6 +10,12 @@ class Client(discord.Client):
         
         if message.content.startswith('hello'):
             await message.channel.send(f'hello there {message.author}')
+        if "https://store" in message.content and message.channel.id==1392529105899094016:
+            if message.author.id == 321987969177354240:
+                await message.channel.send("Zamknij ryj Kesu")
+            else:
+                await message.channel.send("fajne")
+                
         #print(f'Message from {message.author}: {message.content}')
         
 ticket = open("BotTicket.txt",'r').read()        
